@@ -10,3 +10,17 @@ REST-Rant is an app where users can review restaurants.
 
 **You Just Need to Talk it Out:** Have an open conversation with your friends and family in the messenger. Hate tomatoes? Guess we won't be getting pizza tonight!
 
+
+| Method | Path | Purpose
+| --- | --- | --- |
+| GET | / | Home Page |
+| GET | /places | Places Index Page |
+| POST | /places | Create New Place |
+| GET | /places/new | Form Page for Creating New Place | 
+| GET | /palces/:id | Details about a particular place |
+| PUT | /places/:id | Update a particular place | 
+| GET | /palces/:id/edit | Form page for editing an existing page | 
+| DELETE | /places/:id | Delete a particular place | 
+| POST | /places/:id/rant | Create a RANT (comment) about a particular place |
+| DELETE | /places/:id/rant/:rantID | Delete a RANT (comment) about a particular place | 
+| GET | * | 404 page (matches any route that is not defined above) |
