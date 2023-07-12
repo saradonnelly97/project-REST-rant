@@ -23,17 +23,20 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    if (req.body.hasGluten === 'on') {
-        req.body.hasGluten = true
-    } else {
-        req.body.hasGluten = false
+    if (!req.body.pic) {
+      // Default image if one is not provided
+      req.body.pic = '/images/joshuatree.jpeg'
+      // https://unsplash.com/photos/-9UJTnXpUXM
     }
-
-    if (!req.body.image) req.body.image = 'https://images.unsplash.com/photo-1534620808146-d33bb39128b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-
-    Bread.push(req.body)
-    res.redirect('/places')
-})
+    if (!req.body.city) {
+      req.body.city = 'Anytown'
+    }
+    if (!req.body.state) {
+      req.body.state = 'USA'
+    }
+    places.push(req.body)
+    res.redirect('./places')
+  })
 
 
 module.exports = router
