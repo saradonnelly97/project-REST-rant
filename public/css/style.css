@@ -3,8 +3,16 @@ h1 {
     color: cornflowerblue;
   }
 
+  body { 
+    text-align: center; 
+}
+
   img {
     width: 25%; 
     display: block; 
     margin: auto;
+}
+
+.btn {
+    background-color: blueviolet;
 }

@@ -1,23 +1,14 @@
 const React = require('react')
 const Def = require('../default')
 
-function newForm (data) {
-    let placesFormatted = data.places.map((place) => {
-      return (
-        <div>
-          <h2>{place.name}</h2>
-          <img src={place.pic} alt={place.name}/>
-        </div>
-      )
-    })
+function new_form () {
     return (
-      <Def>
+        <Def>
           <main>
-              <h1>PLACES NEW PAGE</h1>
-              {placesFormatted}
+            <h1>Add a New Place</h1>
           </main>
-      </Def>
-  )
-  }
+        </Def>
+    )
+}
 
-module.exports = newForm
+module.exports = new_form
