@@ -12,7 +12,7 @@ router.get("/new", (req, res) => {
 router.post("/", (req, res) => {
   if (!req.body.pic) {
     // Default image if one is not provided
-    req.body.pic = "../images/joshuatree.jpeg"
+    req.body.pic = "/images/paish-zaini--9UJTnXpUXM-unsplash.jpg"
     // https://unsplash.com/photos/-9UJTnXpUXM
   }
   if (!req.body.city) {
@@ -41,19 +41,18 @@ router.get("/:id", (req, res) => {
   }
 })
 
-router.get('/:id/edit', (req, res) => {
+router.get("/:id/edit", (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
-      res.render('error404')
+      res.render("error404")
   }
   else if (!places[id]) {
-      res.render('error404')
+      res.render("error404")
   }
   else {
-    res.render('places/edit', { place: places[id] })
+    res.render("places/edit", { place: places[id] })
   }
 })
-
 
 router.put("/:id", (req, res) => {
   let id = Number(req.params.id)
@@ -64,7 +63,7 @@ router.put("/:id", (req, res) => {
       res.render("error404")
   }
   else {
-      // Go into req.body and make sure data is valid
+      // Dig into req.body and make sure data is valid
       if (!req.body.pic) {
           // Default image if one is not provided
           req.body.pic = "http://placekitten.com/400/400"

@@ -1,16 +1,25 @@
-const React = require('react')
-const Def = require('../default.jsx')
+const React = require("react")
+const Def = require("../default.jsx")
 
-function edit_form (data) {
-    return (
-        <Def>
-          <main>
-            <h1>Edit Place</h1>
-            <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+function edit_form(data) {
+  return (
+    <Def title="Edit Restaurant">
+      <main>
+        <h1>Edit Restaurant</h1>
+        <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
           <div className="row">
             <div className="form-group col-sm-6">
-              <label htmlFor="name">Place Name</label>
-              <input className="form-control" id="name" name="name" value={data.place.name} required />
+              <label htmlFor="name">Restaurant Name</label>
+              <input
+                className="form-control"
+                id="name"
+                name="name"
+                value={data.place.name}
+                onChange={(event) => {
+                  data.place.name = event.target.value
+                }}
+                required
+              />
             </div>
             <div className="form-group col-sm-6">
               <label htmlFor="pic">Place Picture</label>
@@ -19,17 +28,71 @@ function edit_form (data) {
                 id="pic"
                 name="pic"
                 pattern="https?://.+"
+                value={data.place.pic}
+                onChange={(event) => {
+                  data.place.pic = event.target.value
+                }}
               />
             </div>
           </div>
           <div className="row">
             <div className="form-group col-sm-6">
+              <div className="form-group">
+                <label htmlFor="cuisines">Cuisines</label>
+                <input
+                  className="form-control"
+                  id="cuisines"
+                  name="cuisines"
+                  value={data.place.cuisines}
+                  onChange={(event) => {
+                    data.place.cuisines = event.target.value
+                  }}
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-group col-sm-6">
+              <div className="form-group">
+                <label htmlFor="established">Established</label>
+                <input
+                  className="form-control"
+                  id="established"
+                  name="established"
+                  pattern="(19|20)\d{2}"
+                  title="Please enter a valid year beginning with either 19 or 20"
+                  value={data.place.established}
+                  onChange={(event) => {
+                    data.place.established = event.target.value
+                  }}
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="form-group col-sm-6">
               <label htmlFor="city">City</label>
-              <input className="form-control" id="city" name="city" />
+              <input
+                className="form-control"
+                id="city"
+                name="city"
+                value={data.place.city}
+                onChange={(event) => {
+                  data.place.city = event.target.value
+                }}
+              />
             </div>
             <div className="form-group col-sm-6">
               <label htmlFor="state">State</label>
-              <select className="form-control" id="state" name="state">
+              <select
+                className="form-control"
+                id="state"
+                name="state"
+                value={data.place.state}
+                onChange={(event) => {
+                  data.place.state = event.target.value
+                }}
+              >
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -83,37 +146,15 @@ function edit_form (data) {
               </select>
             </div>
           </div>
-          <div className="row">
-            <div className="form-group col-sm-6">
-              <div className="form-group">
-                <label htmlFor="cuisines">Cuisines</label>
-                <input
-                  className="form-control"
-                  id="cuisines"
-                  name="cuisines"
-                  required
-                />
-              </div>
-            </div>
-            <div className="form-group col-sm-6">
-              <div className="form-group">
-                <label htmlFor="established">Established</label>
-                <input
-                  className="form-control"
-                  id="established"
-                  name="established"
-                  required
-                  pattern="(19|20)\d{2}"
-                  title="Please enter a valid year beginning with either 19 or 20"
-                />
-              </div>
-            </div>
-          </div>
-          <input className="btn btn-primary" type="submit" value="Add Place" />
+          <input
+            className="btn btn-primary"
+            type="submit"
+            value="✎ Submit"
+          />
         </form>
-          </main>
-        </Def>
-    )
+      </main>
+    </Def>
+  )
 }
 
 module.exports = edit_form
