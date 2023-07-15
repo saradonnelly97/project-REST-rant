@@ -3,9 +3,14 @@
   flex-direction: column;
   text-align: center;
   font-weight: bold;
-  background-color: antiquewhite;
+  background-color: indianred;
 }
 
+main { 
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: beige;
+}
 #root {
     min-height: 100%;
     position: relative;
@@ -37,17 +42,16 @@ nav {
   }
   
   nav a {
-      color: antiquewhite !important;
-      font-size: 1.1em;
-      transition: 0.2s ease-in-out !important;
+      color: white;
+      font-size: 1.5em;
+      transition: 0.2s ease-in-out;
   }
   
   nav a:hover {
-    color: antiquewhite !important;
-    text-shadow: 0px 0px 5px antiquewhite !important;
+    color: chocolate;
     text-decoration: none;
     font-size: 1.13em;
-    transition: 0.2s ease-in-out !important;
+    transition: 0.2s ease-in-out;
   }
   
   .navbar-nav .nav-link:hover {
