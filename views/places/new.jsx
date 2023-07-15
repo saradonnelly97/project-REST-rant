@@ -23,11 +23,11 @@ function new_form () {
             </div>
           </div>
           <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6">
               <label htmlFor="city">City</label>
               <input className="form-control" id="city" name="city" />
             </div>
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6">
               <label htmlFor="state">State</label>
               <select className="form-control" id="state" name="state">
                 <option value="AL">AL</option>
@@ -84,7 +84,7 @@ function new_form () {
             </div>
           </div>
           <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6">
               <div className="form-group">
                 <label htmlFor="cuisines">Cuisines</label>
                 <input
@@ -95,7 +95,7 @@ function new_form () {
                 />
               </div>
             </div>
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6">
               <div className="form-group">
                 <label htmlFor="established">Established</label>
                 <input
