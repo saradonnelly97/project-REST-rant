@@ -8,7 +8,7 @@ function new_form () {
             <h1>Add a New Place</h1>
             <form method="POST" action="/places">
           <div className="row">
-            <div className="form-group col-md-8">
+            <div className="form-group col-sm-6">
               <label htmlFor="name">Place Name</label>
               <input className="form-control" id="name" name="name" required />
             </div>

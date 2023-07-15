@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const places = require("../models/places");
 
+
 router.get("/", (req, res) => {
   res.render("places/index", { places });
 });
@@ -50,7 +51,7 @@ router.get("/:id/edit", (req, res) => {
       res.render("error404")
   }
   else {
-    res.render("places/edit", { place: places[id] })
+    res.render("places/edit", { place: places[id], id })
   }
 })
 

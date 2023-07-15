@@ -1,6 +1,6 @@
 module.exports = [
     {
-      id: 1,
+      id: 0,
       name: "H-Thai-ML",
       city: "Seattle",
       state: "WA",
@@ -9,7 +9,7 @@ module.exports = [
       pic: "../images/alekseycheese.jpeg",
     },
     {
-      id: 2,
+      id: 1,
       name: "Coding Cat Cafe",
       city: "Phoenix",
       state: "AZ",

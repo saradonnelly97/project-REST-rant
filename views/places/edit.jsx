@@ -6,15 +6,12 @@ function edit_form(data) {
     <Def title="Edit Restaurant">
       <main>
         <h1>Edit Restaurant</h1>
-        <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+        <form method="POST" action={`/places/${data.id}?_method=PUT`}>
           <div className="row">
             <div className="form-group col-sm-6">
               <label htmlFor="name">Restaurant Name</label>
-              <input
-                className="form-control"
-                id="name"
-                name="name"
-                value={data.place.name}
+              <input className="form-control" id="name" name="name" 
+              value={data.place.name}
                 onChange={(event) => {
                   data.place.name = event.target.value
                 }}
