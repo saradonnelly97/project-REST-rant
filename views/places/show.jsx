@@ -4,13 +4,10 @@ const Def = require("../default")
 function show(data) {
   return (
     <Def title="Restaurant Details">
-      <head>
-        <link rel="icon" type="image/png" href="favicons/wine.png" />
-      </head>
       <main>
         <div className="row flex-column flex-md-row">
           <div className="col-md-4 p">
-            <img
+          <img
               src={data.place.pic}
               alt={data.place.name}
               className="img-fluid"

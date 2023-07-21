@@ -5,14 +5,14 @@ db.Place.create([{
     city: 'Seattle',
     state: 'WA',
     cuisines: 'Vietnamese, Pan-Asian',
-    pic: '/images/lizaPooor.jpeg',
+    pic: './images/lizaPooor.jpeg',
     founded: 1989
 }, {
     name: 'The O-Curry-ence',
     city: 'Phoenix',
     state: 'AZ',
     cuisines: 'Indian',
-    pic: '/images/amiraliMirha.jpeg',
+    pic: './images/amiraliMirha.jpeg',
     founded: 2020
 }])
     .then(() => {
