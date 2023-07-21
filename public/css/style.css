@@ -1,19 +1,60 @@
-  body { 
-    display: flex;
-  flex-direction: column;
+body { 
   text-align: center;
   font-weight: bold;
-  background-color: indianred;
+  background-color: white;
+  font-family: Prompt;
 }
 
 main { 
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: beige;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
 }
+
+.philosophy-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 100px;
+}
+
+.philosophy {
+  margin-top: 4em;
+  padding: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px; 
+}
+
+.articleOne {
+  grid-column: 1;
+}
+
+.articleTwo {
+  grid-column: 2;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+#mylogo {
+  position: absolute;
+  left:5px;
+  top:5;
+  height: 70px;
+  width: 240px;
+  }
+
 #root {
     min-height: 100%;
-    position: relative;
+    text-align: center;
     margin-top: 8em;
     margin-bottom: 8em;
   }
@@ -24,11 +65,14 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1;
-    height: 3.3em;
-    background: pink;
+    height: 4.3em;
+    background: white;
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: left;
+    text-align: right;
+    text-decoration: none;
+    font-family: Prompt;
+    font-style: italic;
   }
   
   nav ul {
@@ -42,16 +86,22 @@ nav {
   }
   
   nav a {
-      color: white;
+      color: black;
       font-size: 1.5em;
-      transition: 0.2s ease-in-out;
+      text-decoration: none;
   }
-  
+
   nav a:hover {
-    color: chocolate;
+    color: blue;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: text-shadow 0.4s ease;
+  }
+
+  nav a:visited {
+    color: black;
     text-decoration: none;
     font-size: 1.13em;
-    transition: 0.2s ease-in-out;
   }
   
   .navbar-nav .nav-link:hover {
@@ -64,13 +114,15 @@ nav {
   }
 
   img {
-    width: 35%; 
+    width: 75%; 
     display: block; 
     margin: auto;
 }
 
 .btn {
     background-color: blueviolet;
+    border-color: white;
+    margin-bottom: 50px;
 }
 
 .form-control {
@@ -97,7 +149,7 @@ nav {
     width: 100%;
     height: 3em;
     line-height: 1em !important;
-    background: pink;
-    color: antiquewhite !important;
+    background: white;
+    color: black !important;
     font-size: 1em;
   }
