@@ -15,12 +15,15 @@ function show(data) {
               alt={data.place.name}
               className="img-fluid"
             />
+            <h3>Located in {data.place.city}, {data.place.state}</h3>
           </div>
           <div className="col-md-8">
             <h1>{data.place.name}</h1>
             <h2 className="mb-4">Rating</h2>
             <p className="show">Not Rated </p>
             <h2 className="mb-4">Description</h2>
+            <h3>{data.place.showEstablished()}</h3>
+            <h4>Serving {data.place.cuisines}</h4>
             <p className="show">
             {data.place.name} has been serving {data.place.cuisines} in {data.place.city}, {data.place.state} since {data.place.established}.
             </p>
