@@ -238,3 +238,8 @@ h1 {
   color: black !important;
   font-size: 1em;
 }
+
+#subtitle {
+  font-size: x-small;
+  font-weight: lighter;
+}

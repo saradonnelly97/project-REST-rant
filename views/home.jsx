@@ -9,7 +9,7 @@ function home() {
           <h1 className="rest">r e s t</h1>
           <h1 className="RANT"> - RANT</h1> 
           <img src="../images/dickBell.jpeg" className="landing" alt="Photo of an empty plate." />
-          <div>
+          <div id="subtitle">
             Photo by <a href="https://unsplash.com/@maplerockdesign">Richard Bell</a> on <a href="https://unsplash.com/photos/UWQepYM0kLU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </div>
         </div>
