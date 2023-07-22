@@ -17,7 +17,6 @@ function Def (html) {
       </head>
             <body>
             <nav>
-            <img id="mylogo" src="/images/restrantLogo.png"></img>
           <ul>
             <li>
               <a href="/">HOME</a>
@@ -30,11 +29,7 @@ function Def (html) {
             </li>
           </ul>
         </nav>
-                <div id="root">{html.children}</div>
-                <div className="footer">
-                    
-                    there should be a footer here
-                </div>
+            <div id="root">{html.children}</div>
             </body>
         </html>
     )

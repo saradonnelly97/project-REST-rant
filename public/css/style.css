@@ -10,7 +10,33 @@ main {
   margin-left: 20px;
   background-color: white;
 }
+.rest {
+  font-family: didot;
+  font-size: 18em;
+  position: absolute;
+  bottom: 160px;
+  right: 55px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px rgba(135, 129, 129, 0.8);
+  z-index: 1;
+}
 
+.RANT {
+  font-family: copperplate;
+  font-size: 19rem;
+  position: absolute;
+  bottom: -200px;
+  right: 50px;
+  text-decoration: none;
+  color:brown;
+  text-shadow: 0 0 5px rgba(177, 7, 7, 0.8);
+  z-index: 1;
+}
+
+.landing {
+  filter: blur(1.5px);
+}
 .philosophy-container {
   max-width: 800px; 
   margin: 0 auto; 
@@ -34,28 +60,63 @@ main {
 
 .articleOne {
   grid-column: 1;
+  animation: fadeIn 7s;
+  -webkit-animation: fadeIn 7s;
+  -moz-animation: fadeIn 7s;
+  -o-animation: fadeIn 7s;
+  -ms-animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .articleTwo {
   grid-column: 2;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
 
 .container {
   padding: 2px 16px;
 }
 
-#mylogo {
+/* #mylogo {
   position: absolute;
   left:5px;
   top:5;
   height: 70px;
   width: 240px;
-}
+} */
 
 #root {
   min-height: 100%;
   text-align: center;
-  margin-top: 8em;
+  margin-top: 2em;
   margin-bottom: 8em;
 }
 
@@ -71,15 +132,14 @@ a:hover {
 }
 
 nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 210px;
   z-index: 1;
-  height: 5.3em;
+  height: 11.5em;
   background: white;
   padding-top: 15px;
-  padding-bottom: 15px;
   text-align: right;
   text-decoration: none;
   font-family: Prompt;
@@ -90,18 +150,17 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  width: 200px;
 }
   
-nav li {
-  display: inline;
-  margin-right: 25px;
-}
-  
-nav a {
-  color: black;
-  font-size: 1.5em;
+nav li a {
+  display: block;
+  padding: 8px 16px;
   text-decoration: none;
+  font-size: 1.5em;
 }
+
 
 nav a:hover {
   color: black;

@@ -6,12 +6,13 @@ function home() {
     <Def>
       <main>
         <div>
-          <img src="../images/dickBell.jpeg" alt="An editorial photo featuring many different Korean dishes in various take out bins." />
+          <h1 className="rest">r e s t</h1>
+          <h1 className="RANT"> - RANT</h1> 
+          <img src="../images/dickBell.jpeg" className="landing" alt="Photo of an empty plate." />
           <div>
             Photo by <a href="https://unsplash.com/@maplerockdesign">Richard Bell</a> on <a href="https://unsplash.com/photos/UWQepYM0kLU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </div>
         </div>
-
         <div className="philosophy-container">
           <div className="philosophy">
             <h2><i>Tell It How It Is</i></h2>
