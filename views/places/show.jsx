@@ -7,11 +7,7 @@ function show(data) {
       <main>
         <div className="row flex-column flex-md-row">
           <div className="col-md-4 p">
-          <img
-              src={data.place.pic}
-              alt={data.place.name}
-              className="img-fluid"
-            />
+          <img src={data.place.pic} alt={data.place.name} />
             <h3>Located in {data.place.city}, {data.place.state}</h3>
           </div>
           <div className="col-md-8">

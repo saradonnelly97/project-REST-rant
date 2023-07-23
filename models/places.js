@@ -2,15 +2,16 @@ const mongoose = require('mongoose')
 
 const placeSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  pic: { type: String, default:'https://images.unsplash.com/photo-1515112912807-1b9017ddeb1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'},
+  pic: { type: String, default: 'https://images.unsplash.com/photo-1515112912807-1b9017ddeb1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'},
   cuisines: { type: String, required: true },
   city: { type: String, default: 'Anytown' },
   state: { type: String, default: 'USA' },
   founded: {
     type: Number,
-    min: [1673, 'Liza Minnelli LIES.'],
-    max: [new Date().getFullYear(), 'Hey, this year is in the future!']
-  }
+    min: [1673, 'Surely not that old?!'],
+    max: [new Date().getFullYear(), 'This is the future!']
+  },
+  comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 })
 
 placeSchema.methods.showEstablished = function() {
