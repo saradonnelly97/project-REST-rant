@@ -105,14 +105,6 @@ main {
   padding: 2px 16px;
 }
 
-/* #mylogo {
-  position: absolute;
-  left:5px;
-  top:5;
-  height: 70px;
-  width: 240px;
-} */
-
 #root {
   min-height: 100%;
   text-align: center;
@@ -213,8 +205,18 @@ h1 {
 .form-control {
   text-align: center;
 }
-  
-  
+
+.form-range {
+  max-width: 300px;
+  margin: 15px;
+  padding: 0.25rem;
+}
+
+.form-check-input {
+  font-size: 1.25em;
+  margin-left: 10px;
+}
+
 .col-md-4 {
   max-width: 450px;
   margin: 10 auto;
