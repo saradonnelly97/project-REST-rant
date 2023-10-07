@@ -2,7 +2,7 @@ body {
   text-align: center;
   font-weight: bold;
   background-color: white;
-  font-family: Prompt;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main { 
@@ -134,8 +134,8 @@ nav {
   padding-top: 15px;
   text-align: right;
   text-decoration: none;
-  font-family: Prompt;
-  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
   color: black;
 }
   
