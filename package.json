@@ -1,10 +1,13 @@
 {
+  "homepage": "https://saradonnelly97.github.io/project-REST-rant",
   "name": "restrant",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon index.js -e .js,.jsx"
+    "dev": "npx nodemon index.js -e .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-react-views": "^0.11.0",
+    "gh-pages": "^6.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^7.4.0",
     "react": "^18.2.0"

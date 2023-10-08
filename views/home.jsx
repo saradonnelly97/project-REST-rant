@@ -28,8 +28,8 @@ function home() {
           <div className="articleOne">
             <img className="articleOneImage" src="/images/annieSpratt.jpeg" alt="Article One" />
             <div className="container">
-              <h4>inserting some words</h4>
-              <p>inserting some words here because reasons...</p>
+              <h4>Gam-Gam's 88th Birthday</h4>
+              <p>Meredith Bronson needed somewhere to go to celebrate her great-grandmother's birthday. Very few restaurants can be privvy to such momentous occassions. What Meredith did next to find the perfect </p>
             </div>
           </div>
 
